@@ -1,0 +1,435 @@
+:root {
+    --primary-color: #111317;
+    --primary-color-light: #1f2125;
+    --primary-color-extra-light: #35373b;
+    --secondary-color: #f9ac54;
+    --secondary-color-dark: #d79447;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+  }
+
+.display6{
+    color: white;
+}
+  .header_top {
+    background: black;
+    padding: 5px 55px 5px 45px;
+}
+
+.header_social span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    margin-right: 24px;
+  }
+
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+
+  .section__header { 
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+  }
+  
+  .section__subheader, .explore__event p  { /** para no repetir código, aprovechamos estos estilos para p de .section__event*/
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color-dark);
+  }
+
+  
+
+  
+  nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .nav__logo {
+    max-width: 150px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+  }
+  
+  .link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+  }
+  
+  .link a:hover::after {
+    width: 50%;
+  }
+
+
+  .video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+    /* Estilos para el contador */
+    .contador {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .contador h1 {
+        font-size: 2rem;
+      }
+      .contador .tiempo {
+        display: inline-block;
+        margin: 10px;
+        font-size: 1.5rem;
+      }
+
+
+        /* Estilos de la sección */
+        .seccion2 {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+          }
+          .texto2 {
+            flex: 1;
+            color: white;
+          }
+          .seccion2 .imagen {
+            flex: 1;
+            max-width: 100%;
+          }
+
+    .seccion {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+      .imagen {
+        flex: 1;
+        width: 50%;
+    height: auto;
+    display: block;
+      }
+      .texto {
+        flex: 1;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      /* Ajustes para pantallas pequeñas */
+      @media (max-width: 768px) {
+        .seccion {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+
+       /* Barra de CTA fija */
+    .cta-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ff5e5e;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+      }
+      .cta-bar .mensaje {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .cta-bar .contador, .cta-bar .boton {
+        font-size: 1rem;
+        margin-left: 15px;
+      }
+      .cta-bar .boton {
+        background-color: #333;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      /* Estilo del resto de la página */
+      body {
+        margin-top: 60px; /* Ajuste para evitar que el contenido quede oculto bajo la barra */
+      }
+
+      .btn-centered {
+        /* position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%); */
+      }
+
+
+.image-container {
+ position: relative;
+    /* width: 300px; Ajusta el tamaño según necesites */
+    margin: 20px; */
+}
+
+.image {
+    /* width: 100%;
+    height: auto;
+    display: block; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Ocultar texto por defecto */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Mostrar texto al pasar el mouse */
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* position: relative;
+    overflow: hidden; */
+    width: 100%;
+    height: 100vh; /* O un valor que se ajuste a tus necesidades */
+}
+
+.video {
+ 
+ display: flex;
+ align-content: center;
+    width: 60% !important;
+    height: 100vh;
+    /* transform: translate(-50%, -50%); */
+    object-fit: cover; Asegura que el video cubra todo el contenedor
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/santiago.jpg'); /* Coloca tu imagen de fondo aquí */
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-position: center; /* Para centrar la imagen */
+    z-index: 1; /* Asegurarse de que la imagen esté detrás */
+}
+
+
+.card {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+}
+
+.congresopresencial {
+    padding: 20px;
+    border: 2px solid #ff8c00; /* Color del borde */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para animación */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+.congresopresencial:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al hacer hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.cta-button {
+    background-color: #ff8c00; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+.footer__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambiado a 1 columna para móviles */
+    gap: 2rem;
+    padding: 2rem; /* Espacio alrededor del contenido */
+}
+
+@media (min-width: 768px) {
+    .footer__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas en pantallas más grandes */
+    }
+}
+
+
+
+.footer__logo {
+    max-width: 150px;
+    margin-bottom: 1rem; /* Menos margen para que se vea más compacto */
+}
+
+.footer__col p {
+    margin-bottom: 1rem; /* Menos espacio entre párrafos */
+    color: var(--text-light);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.footer__socials a:hover {
+    color: var(--white);
+    background-color: var(--secondary-color);
+}
+
+.footer__col h4 {
+    margin-bottom: 1rem; /* Ajustado para menos espacio */
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.footer__col > a {
+    display: block;
+    margin-bottom: 0.5rem; /* Menos espacio entre enlaces */
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.footer__col > a:hover {
+    color: var(--secondary-color);
+}
+
+.footer__bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center; /* Centrar el texto del pie de página */
+}
+
+figcaption {
+    text-align: end; /* Centrar el texto e ícono */
+    margin: 20px 30px; /* Espacio arriba y abajo del figcaption */
+}
+
+.top-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary-color); /* Cambia según tu diseño */
+    font-size: 1.25rem; /* Tamaño del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Efecto de transición */
+}
+
+.top-button:hover {
+    color: var(--white); /* Color al pasar el mouse */
+}
+
